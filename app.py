@@ -30,6 +30,14 @@ class Movie(db.Model):
     title=db.Column(db.String(60))            #电影标题
     year=db.Column(db.String(4))              #电影年份
 
+
+
+@app.context_processor
+def inject_user():
+    user=User.query.first()
+    return dict(user=user)
+
+
 #initialize the database.
 @app.cli.command() #注册为命令
 @click.option('--drop',is_flag=True,help='Create after drop.')  #设置选项
@@ -67,11 +75,15 @@ def forge():
     db.session.commit()
     click.echo('Done')
 
+
+
+
+
 @app.route('/')
 def index():
-    user=User.query.first()
+
     movies=Movie.query.all()
-    return render_template('index.html',user=user,movies=movies)
+    return render_template('index.html',movies=movies)
 
 @app.route('/user/<name>')
 def user_page(name):
@@ -88,5 +100,12 @@ def test_url_for():
     print(url_for('test_url_for',name=2))
 
     return 'Test page'
+
+
+#404错误处理函数
+@app.errorhandler(404)
+def page_not_found(e):
+
+    return render_template('404.html'),404
 
 
