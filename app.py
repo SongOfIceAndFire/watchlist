@@ -2,7 +2,8 @@ import os
 import sys
 import click
 
-from flask import Flask,render_template
+from flask import Flask
+from flask import render_template
 from flask import url_for,request,redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash,check_password_hash
@@ -68,7 +69,7 @@ def initdb(drop):
     if drop:
         db.drop_all()
     db.create_all()
-    click.echo('initialize the database.')
+    click.echo('Initialized the database.')
 
 #generate fake data.
 @app.cli.command()
@@ -96,7 +97,7 @@ def forge():
         db.session.add(movie)
 
     db.session.commit()
-    click.echo('Done')
+    click.echo('Done.')
 
 
 
@@ -152,7 +153,7 @@ def delete(movie_id):
     movie=Movie.query.get_or_404(movie_id)
     db.session.delete(movie)
     db.session.commit()
-    flash('Item deleted')
+    flash('Item deleted.')
     return redirect(url_for('index'))
 
 
@@ -170,18 +171,18 @@ def page_not_found(e):
 @click.option('--username',prompt=True,help='The username used to login.')
 @click.option('--password',prompt=True,hide_input=True,confirmation_prompt=True,help='The password used to login.')
 def admin(username,password):
-    """create user."""
+    """Create user."""
     db.create_all()
 
     user=User.query.first()
 
     if user is not None:
-        click.echo('updating user...')
+        click.echo('Updating User...')
         user.username=username
         user.set_password(password)
 
     else:
-        click.echo('creating user...')
+        click.echo('Creating User...')
         user=User(username=username,name='Admin')
         user.set_password(password)
         db.session.add(user)
