@@ -9,8 +9,8 @@ coverage = "*"
 [packages]
 flask = "*"
 python-dotenv = "*"
-flask-login = "*"
 flask-sqlalchemy = "*"
+flask-login = "*"
 
 [requires]
 python_version = "3.6"
