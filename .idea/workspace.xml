@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d41a11-1ab3-41ef-95cc-2e0fe01693e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_watchlist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,11 +142,13 @@
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/test_watchlist.py" />
+        <option value="$PROJECT_DIR$/static/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
+    <option name="x" value="58" />
     <option name="y" value="23" />
     <option name="width" value="1382" />
     <option name="height" value="798" />
@@ -278,7 +277,7 @@
       <workItem from="1561707781636" duration="2406000" />
       <workItem from="1561713302936" duration="112000" />
       <workItem from="1561724324119" duration="521000" />
-      <workItem from="1561771579928" duration="2334000" />
+      <workItem from="1561771579928" duration="2826000" />
     </task>
     <servers />
   </component>
@@ -315,18 +314,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40513000" />
+    <option name="totallyTimeSpent" value="41005000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="23" width="1382" height="798" extended-state="0" />
-    <editor active="true" />
+    <frame x="280" y="43" width="1382" height="798" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12631579" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12631579" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41337386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41337386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,7 +333,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293556" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3293556" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003712" side_tool="true" weight="0.3117207" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996288" weight="0.21276596" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996288" visible="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4996288" weight="0.32674772" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -416,6 +414,19 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_watchlist.py">
       <provider selected="true" editor-type-id="text-editor">
